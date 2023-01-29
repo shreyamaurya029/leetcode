@@ -6,7 +6,9 @@ public:
             
             switch(nums[mid]){
                 case 0: 
-                    swap(nums[mid++], nums[low++]);
+                    swap(nums[mid], nums[low]);
+                    mid++;
+                    low++;
                     break;
                 
                 case 1: 
@@ -14,7 +16,8 @@ public:
                     break;
                 
                 case 2:
-                    swap(nums[mid], nums[high--]);
+                    swap(nums[mid], nums[high]);
+                    high--;
                     break;
             }
         }
