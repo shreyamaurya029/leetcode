@@ -11,15 +11,16 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode *newHead=NULL;
-        while(head!=NULL){
-            ListNode *next=head->next;
-            head->next=newHead;
-            newHead=head;
-            head=next;
+        ListNode* newHead = NULL; //make new dumy node and assign it to NULL
+        while(head != NULL){ 
+            ListNode* next = head->next;  //head ke next ko 'next' assign kar diya     
+            
+            head->next = newHead;  //break the chain between head ka next 
+            
+            newHead = head;
+            head = next;           
         }
-        return newHead;
-        
+       return newHead; 
         
     }
 };
