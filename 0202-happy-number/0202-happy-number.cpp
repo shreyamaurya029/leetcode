@@ -10,7 +10,7 @@ public:
         return fast == 1;
     }
     
-private:
+
     int nextNumber(int n){
         int newNumber = 0;
         while(n != 0){
