@@ -2,6 +2,7 @@ class Solution {
 public:
     
     vector<int> majorityElement(vector<int>& v) {
+        //Extended Boyer Moore’s Voting Algorithm
     int n = v.size(); //size of the array
 
     int cnt1 = 0, cnt2 = 0; // counts
